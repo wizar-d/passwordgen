@@ -8,8 +8,8 @@ int main()
     int amountofchars; // amountofchars will be used as the number of characters in the password
     std::cin >> amountofchars;
     if (!std::cin) { // checks if answer is an integer
-        std::cout << "re-open the program and answer with an integer";
-        getchar(); // so the program works when not in visual studio
+        std::cout << "re-open the program and answer with an integer\n";
+        system("pause");
     }
     else {
         std::string password;
@@ -18,7 +18,7 @@ int main()
         for (int i = 0; i < amountofchars; i++) {
             password = password + wordList[rand() % 72];
         }
-        std::cout << "your password is " << password;
-        getchar(); // so the program works when not in visual studio
+        std::cout << "your password is " << password << "\n";
+        system("pause");
     }
 }
